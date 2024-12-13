@@ -21,5 +21,5 @@ var lengthOfLongestSubstring = function(s) {
         maxLength = Math.max(maxLength, end - start + 1);
     }
 
-    return maxLength; // Kembalikan panjang maksimum
+    return maxLength; // Kembalikan panjang maksimumnya
 };
