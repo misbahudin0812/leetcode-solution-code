@@ -12,7 +12,6 @@ var findScore = function(nums) {
     indexedNums.sort((a, b) => a.value - b.value || a.index - b.index);
 
     for (const { value, index } of indexedNums) {
-        // Jika elemen belum ditandai, tambahkan nilainya ke skor dan tandai elemen terkait
         if (!marked[index]) {
             score += value;
             marked[index] = true;
@@ -24,9 +23,8 @@ var findScore = function(nums) {
     return score;
 };
 
-// Contoh penggunaan
 const nums1 = [2, 1, 3, 4, 5, 2];
-console.log(findScore(nums1)); // Output: 7
+console.log(findScore(nums1)); 
 
 const nums2 = [2, 3, 5, 1, 3, 2];
-console.log(findScore(nums2)); // Output: 5
+console.log(findScore(nums2)); 
