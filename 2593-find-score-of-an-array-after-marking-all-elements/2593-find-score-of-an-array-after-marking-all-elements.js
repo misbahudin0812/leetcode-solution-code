@@ -15,8 +15,8 @@ var findScore = function(nums) {
         if (!marked[index]) {
             score += value;
             marked[index] = true;
-            if (index > 0) marked[index - 1] = true; // Tandai elemen kiri jika ada
-            if (index < n - 1) marked[index + 1] = true; // Tandai elemen kanan jika ada
+            if (index > 0) marked[index - 1] = true; // Menandai elemen kiri jika ada
+            if (index < n - 1) marked[index + 1] = true; // Menandai elemen kanan jika ada
         }
     }
 
