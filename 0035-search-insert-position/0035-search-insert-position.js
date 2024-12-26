@@ -21,3 +21,13 @@ const searchInsert = function(nums, target) {
 
     return left; // Posisi untuk menyisipkan target
 };
+
+// // cara brute force (Kompleksitas waktu adalah O(n), dibandingkan dengan O(log n) pada binary search)
+// const searchInsert = function(nums, target) {
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] >= target) {
+//             return i; // Jika elemen >= target, kembalikan indeks
+//         }
+//     }
+//     return nums.length; // Jika target lebih besar dari semua elemen
+// };
