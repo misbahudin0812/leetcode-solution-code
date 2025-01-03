@@ -25,11 +25,4 @@ var merge = function(nums1, m, nums2, n) {
         }
         p--; // Geser pointer gabungan ke kiri
     }
-
-    // Jika masih ada elemen tersisa di nums2, salin ke nums1
-    while (p2 >= 0) {
-        nums1[p] = nums2[p2];
-        p2--;
-        p--;
-    }
 };
